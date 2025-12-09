@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Last Resort – Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        header p {
+            margin: 3px 0 0 0;
+            font-size: 13px;
+        }
+
+        main {
+            margin: 15px;
+        }
+
+        .query-nav {
+            margin-bottom: 15px;
+        }
+
+        .query-nav a {
+            display: inline-block;
+            margin: 2px 4px 2px 0;
+            padding: 4px 8px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #003366;
+            border: 1px solid #003366;
+        }
+
+        .query-nav a:hover {
+            background-color: #003366;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+        }
+
+        section p.description {
+            margin: 0 0 8px 0;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 5px 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+        }
+
+        footer {
+            margin: 15px;
+            font-size: 11px;
+            color: #555555;
+            border-top: 1px solid #dddddd;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hotel Last Resort – Management Dashboard</h1>
+    <p>Simple report of revenue, occupancy, guests, and events</p>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    Hotel Last Resort – Internal use only
+</footer>
+</body>
+</html>
